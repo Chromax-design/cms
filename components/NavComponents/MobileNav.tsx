@@ -12,7 +12,7 @@ export const MobileNav = () => {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant="outline"><img src='/assets/hamburger.png' className="w-6" /></Button>
+        <Button variant="outline"><img src='/assets/hamburger.png' className="w-6" alt="hamburger icon"/></Button>
       </SheetTrigger>
       <SheetContent side={"left"}>
         <div className="h-full">

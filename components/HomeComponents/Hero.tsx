@@ -35,7 +35,7 @@ export const Hero = () => {
         >
           <p className={LoraFont.className}>Revolutionize Your Education Experience</p>
           <p className="text-sm mt-3">
-            A comprehensive solution for every student&apos;s needs. Transform how
+            A comprehensive solution for every student&rsquo;s needs. Transform how
             you learn with innovative features and support.
           </p>
         </motion.div>
