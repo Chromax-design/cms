@@ -6,8 +6,8 @@ import { Button } from "../ui/button";
 const Footer = () => {
   return (
     <section className=" px-3 bg-gray-100">
-      <div className="max-w-6xl mx-auto max-sm:space-y-10 sm:grid grid-cols-12 items-start py-20 gap-10 lg:gap-5">
-        <div className="col-span-12 sm:col-span-6 lg:col-span-4 text-slate-600">
+      <div className="max-w-6xl mx-auto max-sm:space-y-10 sm:grid sm:grid-cols-12 sm:items-start py-20 gap-10 lg:gap-5">
+        <div className="sm:col-span-6 lg:col-span-4 text-slate-600">
           <Link
             href={"/"}
             className=" border-2 border-black px-3 py-2 uppercase tracking-wider"
@@ -34,7 +34,7 @@ const Footer = () => {
             })}
           </div>
         </div>
-        <div className="col-span-12 sm:col-span-6 lg:col-span-2">
+        <div className="sm:col-span-6 lg:col-span-2">
           <div className="flex flex-col gap-5">
             {navLinks.map((item) => {
               return (
@@ -49,7 +49,7 @@ const Footer = () => {
             })}
           </div>
         </div>
-        <div className="col-span-12 sm:col-span-6 lg:col-span-2">
+        <div className="sm:col-span-6 lg:col-span-2">
           <div className="flex flex-col gap-5 text-slate-600">
             <Link href={""} className="capitalize font-medium hover:text-slate-950">
               faq
@@ -65,12 +65,12 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <div className="col-span-12 sm:col-span-6 lg:col-span-4">
+        <div className="sm:col-span-6 lg:col-span-4">
           <h3 className="text-lg font-bold capitalize text-slate-600">
             newsletter
           </h3>
           <p className="mt-5 text-slate-600">
-            Subscribe Our newsletter get update our new course
+            Subscribe to our newsletter get latest updates
           </p>
           <form action="" className="mt-5">
             <div className="flex border rounded-sm p-2 gap-2 border-slate-600">
@@ -89,8 +89,8 @@ const Footer = () => {
           </form>
         </div>
       </div>
-      <div className="border-t py-5 text-center text-sm capitalize text-slate-600">
-        copyright &copy; {new Date().getFullYear()} all righte reserved by CLASS
+      <div className="border-t border-t-gray-300 py-5 text-center text-sm capitalize text-slate-600">
+        copyright &copy; {new Date().getFullYear()} all rights reserved by CLASS
       </div>
     </section>
   );
