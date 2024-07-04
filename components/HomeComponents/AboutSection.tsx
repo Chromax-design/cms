@@ -12,13 +12,9 @@ const aboutUsList: { id: number; title: string }[] = [
 
 export const AboutSection = () => {
   return (
-    <section className="py-5 max-w-6xl mx-auto px-4">
+    <section className="py-3 max-w-6xl mx-auto px-4">
       <div className="grid md:grid-cols-2 gap-10 items-center justify-center">
-        <img
-          src={"/assets/about-img.svg"}
-          alt=""
-          className=" w-full max-w-lg mx-auto md:ml-auto"
-        />
+        <Image src={'/assets/about-img.svg'} alt="about image" className="w-full max-w-lg mx-auto md:ml-auto" width={'100'} height={'100'}/>
         <div>
           <span className="text-sm tracking-wider font-medium">About CLASS</span>
           <h2
