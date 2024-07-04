@@ -5,8 +5,8 @@ import { Button } from "../ui/button";
 
 const Footer = () => {
   return (
-    <section className=" px-3 bg-gray-50">
-      <div className="max-w-6xl mx-auto grid grid-cols-12 items-start py-20 gap-10 lg:gap-5">
+    <section className=" px-3 bg-gray-100">
+      <div className="max-w-6xl mx-auto max-sm:space-y-10 sm:grid grid-cols-12 items-start py-20 gap-10 lg:gap-5">
         <div className="col-span-12 sm:col-span-6 lg:col-span-4 text-slate-600">
           <Link
             href={"/"}
