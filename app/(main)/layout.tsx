@@ -1,12 +1,15 @@
-import Nav from '@/components/NavComponents/Nav'
-import React from 'react'
+import Footer from "@/components/NavComponents/Footer";
+import Nav from "@/components/NavComponents/Nav";
+import React from "react";
 
-const Mainlayout = ({children}:{children: React.ReactNode}) => {
+const Mainlayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className=' mx-auto'>
+    <div className=" mx-auto">
       <Nav />
-      {children}</div>
-  )
-}
+      {children}
+      <Footer />
+    </div>
+  );
+};
 
-export default Mainlayout
+export default Mainlayout;
