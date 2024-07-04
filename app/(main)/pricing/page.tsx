@@ -1,12 +1,12 @@
-import PageBanner from '@/components/PageBanner'
-import React from 'react'
+import PageBanner from "@/components/PageBanner";
+import React from "react";
 
 const PricingPage = () => {
   return (
     <section>
-        <PageBanner title='pricing' />
+      <PageBanner title="pricing" />
     </section>
-  )
-}
+  );
+};
 
-export default PricingPage
+export default PricingPage;
