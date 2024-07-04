@@ -20,14 +20,14 @@ export const AboutSection = () => {
           className=" w-full max-w-lg mx-auto md:ml-auto"
         />
         <div>
-          <span className="text-sm tracking-wider font-medium">About Skoolbod</span>
+          <span className="text-sm tracking-wider font-medium">About CLASS</span>
           <h2
             className={`${LoraFont.className} text-3xl font-bold capitalize mb-5 mt-3`}
           >
             Enabling a flexible and functional education system
           </h2>
           <p>
-            Skoolbod is a mobile/web software application designed to facilitate
+            CLASS is a mobile/web software application designed to facilitate
             a seamless learning experience through the fusion of educational
             benefits and technology.
           </p>
