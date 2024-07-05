@@ -4,7 +4,7 @@ import { Lora } from "next/font/google";
 import { Button } from "@/components/ui/button";
 import { aboutPageText } from "@/data";
 import { cn } from "@/lib/utils";
-const LoraFont = Lora({ subsets: ["latin"], weight: ["400", "700"] });
+const LoraFont = Lora({ subsets: ["latin"], weight: ["700"] });
 
 const AboutPage = () => {
   return (

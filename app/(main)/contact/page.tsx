@@ -4,36 +4,11 @@ import PageBanner from "@/components/PageBanner";
 import { contacts, socials } from "@/data";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-
-import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
-import { z } from "zod";
-
-import { Button } from "@/components/ui/button";
-import {
-  Form,
-  FormControl,
-  FormDescription,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-
-const FormSchema = z.object({
-  username: z.string().min(2, {
-    message: "Username must be at least 2 characters.",
-  }),
-});
+import { Lora } from "next/font/google";
+import ContactForm from "@/components/ContactPageComponents/ContactForm";
+const LoraFont = Lora({ subsets: ["latin"], weight: ["700"] });
 
 const ContactPage = () => {
-  const form = useForm<z.infer<typeof FormSchema>>({
-    resolver: zodResolver(FormSchema),
-    defaultValues: {
-      username: "",
-    },
-  });
   return (
     <section>
       <PageBanner title="Contact" />
@@ -56,7 +31,7 @@ const ContactPage = () => {
                   {item.title && (
                     <a
                       href={item.link}
-                      className="capitalize font-semibold text-lg"
+                      className={`capitalize font-semibold text-lg ${LoraFont.className}`}
                     >
                       {item.title}
                     </a>
@@ -67,12 +42,14 @@ const ContactPage = () => {
             );
           })}
         </div>
-        <div className="grid grid-cols-12 gap-5 py-10">
-          <div className=" col-span-4">
+        <div className="grid md:grid-cols-12 gap-10 py-20">
+          <div className=" col-span-5">
             <span className="text-sm capitalize tracking-wide">
               send a message
             </span>
-            <h2 className="capitalize font-bold text-5xl my-3">
+            <h2
+              className={`capitalize font-bold text-3xl lg:text-5xl my-3 ${LoraFont.className}`}
+            >
               We Love to Hear From You
             </h2>
             <p className="text-sm">
@@ -93,25 +70,8 @@ const ContactPage = () => {
               })}
             </div>
           </div>
-          <div className="col-span-8">
-            <Form {...form}>
-              <form className="w-2/3 space-y-6">
-                <FormField
-                  control={form.control}
-                  name="username"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Username</FormLabel>
-                      <FormControl>
-                        <Input placeholder="shadcn" {...field} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                <Button type="submit">Submit</Button>
-              </form>
-            </Form>
+          <div className="col-span-7">
+            <ContactForm />
           </div>
         </div>
       </div>

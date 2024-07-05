@@ -87,7 +87,7 @@ export const contacts:contactsType[] = [
     link: 'mailto: mail@visualdev.com '
   },
   {
-    id: 2,
+    id: 3,
     icon: <FaMap />,
     desc: "Suite 109, Trinity Plaza, Obafemi Awolowo way, Ikeja, Lagos State.",
   },

@@ -12,7 +12,7 @@ const LoraFont = Lora({subsets: ['latin'], weight: ['700']})
 
 const PageBanner = ({ title }: { title: string }) => {
   return (
-    <div className="h-[50vh] min-h-[50vh] w-full bg-[url('/assets/banner.jpg')] bg-no-repeat text-white bg-center relative py-10">
+    <div className="h-[50vh] min-h-[55vh] w-full bg-[url('/assets/banner.jpg')] bg-no-repeat bg-cover text-white bg-center relative py-10">
       <div className="absolute top-0 left-0 w-full h-full bg-black/70" />
       <div className="max-w-6xl mx-auto flex justify-start items-center px-3 relative z-10 h-full">
         <div>

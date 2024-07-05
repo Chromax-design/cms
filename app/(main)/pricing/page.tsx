@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 import { Lora } from "next/font/google";
 import { Button } from "@/components/ui/button";
-const LoraFont = Lora({ subsets: ["latin"], weight: ["400", "700"] });
+const LoraFont = Lora({ subsets: ["latin"], weight: ["700"] });
 
 const PricingPage = () => {
   return (

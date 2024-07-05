@@ -2,6 +2,8 @@ import { navLinks, socials } from "@/data";
 import Link from "next/link";
 import React from "react";
 import { Button } from "../ui/button";
+import { Lora } from "next/font/google";
+const LoraFont = Lora({subsets:['latin'], weight:['700']});
 
 const Footer = () => {
   return (
@@ -66,7 +68,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="sm:col-span-6 lg:col-span-4">
-          <h3 className="text-lg font-bold capitalize text-slate-600">
+          <h3 className={`text-lg font-bold capitalize text-slate-600 ${LoraFont.className}`}>
             newsletter
           </h3>
           <p className="mt-5 text-slate-600">
