@@ -4,15 +4,19 @@ import {
   FaInstagram,
   FaLinkedin,
   FaListAlt,
+  FaMap,
+  FaPhoneAlt,
   FaTwitter,
 } from "react-icons/fa";
 import {
   aboutPageTextType,
+  contactsType,
   featureType,
   navLinkType,
   socialType,
 } from "./types";
 import { MdTouchApp } from "react-icons/md";
+import { FaMessage } from "react-icons/fa6";
 
 export const socials: socialType[] = [
   { id: 1, alt: "facebook", icon: <FaFacebook />, href: "" },
@@ -53,7 +57,7 @@ export const features: featureType[] = [
 export const aboutPageText: aboutPageTextType[] = [
   {
     id: 1,
-    subtitle: 'About CLASS',
+    subtitle: "About CLASS",
     title: "Seamless and easy to use educational platform",
     desc: "Welcome to CLASS, where learning meets innovation! Our mission is to transform the educational experience by making it seamless, intuitive, and enjoyable for students, educators, and lifelong learners alike.",
     img: "about-img-2.svg",
@@ -69,6 +73,22 @@ export const aboutPageText: aboutPageTextType[] = [
     title: "Our commitment",
     desc: "At CLASS, we are dedicated to continuous improvement and innovation. We regularly seek feedback from our users to enhance our platform and introduce new features that support effective learning. Our team of passionate developers, and support staff work tirelessly to ensure that our platform remains at the forefront of educational technology.",
     img: "about-img-4.svg",
-    showButton: true
+    showButton: true,
+  },
+];
+
+export const contacts:contactsType[] = [
+  { id: 1, icon: <FaPhoneAlt />, desc: "09045678934", title: "call anytime", link: 'tel: 09045678934' },
+  {
+    id: 2,
+    icon: <FaMessage />,
+    desc: "mail@visualdev.com",
+    title: "send email",
+    link: 'mailto: mail@visualdev.com '
+  },
+  {
+    id: 2,
+    icon: <FaMap />,
+    desc: "Suite 109, Trinity Plaza, Obafemi Awolowo way, Ikeja, Lagos State.",
   },
 ];

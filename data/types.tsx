@@ -24,5 +24,13 @@ export interface aboutPageTextType {
   title: string;
   desc: string;
   img: string;
-  showButton?: boolean
+  showButton?: boolean;
+}
+
+export interface contactsType {
+  id: number;
+  icon: React.ReactElement;
+  desc: string;
+  title?: string;
+  link?: string
 }
