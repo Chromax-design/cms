@@ -11,6 +11,7 @@ import {
 import {
   aboutPageTextType,
   contactsType,
+  featuresPageTypes,
   featureType,
   navLinkType,
   socialType,
@@ -77,18 +78,57 @@ export const aboutPageText: aboutPageTextType[] = [
   },
 ];
 
-export const contacts:contactsType[] = [
-  { id: 1, icon: <FaPhoneAlt />, desc: "09045678934", title: "call anytime", link: 'tel: 09045678934' },
+export const contacts: contactsType[] = [
+  {
+    id: 1,
+    icon: <FaPhoneAlt />,
+    desc: "09045678934",
+    title: "call anytime",
+    link: "tel: 09045678934",
+  },
   {
     id: 2,
     icon: <FaMessage />,
     desc: "mail@visualdev.com",
     title: "send email",
-    link: 'mailto: mail@visualdev.com '
+    link: "mailto: mail@visualdev.com ",
   },
   {
     id: 3,
     icon: <FaMap />,
     desc: "Suite 109, Trinity Plaza, Obafemi Awolowo way, Ikeja, Lagos State.",
+  },
+];
+
+export const featuresPageContent: featuresPageTypes[] = [
+  {
+    id: 1,
+    img: "intuitive-design.svg",
+    title: "Intuitive User Interface",
+    desc: "Our platform boasts an intuitive user interface that ensures both educators and students can navigate effortlessly. With clear menus, straightforward workflows, and user-friendly design, everyone can quickly become proficient in using the system.",
+  },
+  {
+    id: 2,
+    img: "comprehensive-management.svg",
+    title: "Comprehensive Course/subject Management",
+    desc: "Create, manage, and deliver courses with ease. Our course management system supports multimedia content, interactive assignments, and seamless communication between educators and students. It also includes automated grading and feedback systems to streamline the evaluation process.",
+  },
+  {
+    id: 3,
+    img: "mobile-friendly.svg",
+    title: "Mobile-Friendly Access",
+    desc: "Access the platform from any device, anywhere. Our mobile-friendly design ensures that educators and students can stay connected and engaged, even on the go.",
+  },
+  {
+    id: 4,
+    img: "accessibility.svg",
+    title: "Accessibility and Inclusivity",
+    desc: "Our platform is designed to be accessible and inclusive, catering to diverse learning needs and ensuring that all students have equal opportunities to succeed. We comply with global accessibility standards to support all users.",
+  },
+  {
+    id: 5,
+    img: "support.svg",
+    title: "Continuous Support and Training",
+    desc: "We provide continuous support and training to ensure that all users can make the most of our platform. From onboarding to ongoing assistance, our dedicated support team is here to help you every step of the way.",
   },
 ];

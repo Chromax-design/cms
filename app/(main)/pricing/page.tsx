@@ -3,7 +3,14 @@ import Image from "next/image";
 import React from "react";
 import { Lora } from "next/font/google";
 import { Button } from "@/components/ui/button";
+import { Metadata } from "next";
+import Link from "next/link";
 const LoraFont = Lora({ subsets: ["latin"], weight: ["700"] });
+
+export const metadata: Metadata = {
+  title: "Class room | Pricing",
+  description: "Pricing Page",
+};
 
 const PricingPage = () => {
   return (
@@ -37,12 +44,14 @@ const PricingPage = () => {
           <h2 className="text-white text-2xl font-semibold">
             Still have questions? We are eager to hear from you!
           </h2>
-          <Button
-            className="text-sm tracking-wider uppercase"
-            variant={"secondary"}
-          >
-            Get in touch
-          </Button>
+          <Link href={"/contact"}>
+            <Button
+              className="text-sm tracking-wider uppercase"
+              variant={"secondary"}
+            >
+              Get in touch
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

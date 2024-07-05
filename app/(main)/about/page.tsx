@@ -4,7 +4,13 @@ import { Lora } from "next/font/google";
 import { Button } from "@/components/ui/button";
 import { aboutPageText } from "@/data";
 import { cn } from "@/lib/utils";
+import { Metadata } from "next";
 const LoraFont = Lora({ subsets: ["latin"], weight: ["700"] });
+
+export const metadata: Metadata = {
+  title: "Class room | About",
+  description: "About page",
+};
 
 const AboutPage = () => {
   return (

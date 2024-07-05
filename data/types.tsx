@@ -34,3 +34,10 @@ export interface contactsType {
   title?: string;
   link?: string
 }
+
+export interface featuresPageTypes{
+  id: number;
+  img: string;
+  title: string;
+  desc: string
+}

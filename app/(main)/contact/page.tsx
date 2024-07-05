@@ -1,12 +1,16 @@
-"use client";
-
 import PageBanner from "@/components/PageBanner";
 import { contacts, socials } from "@/data";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { Lora } from "next/font/google";
 import ContactForm from "@/components/ContactPageComponents/ContactForm";
+import { Metadata } from "next";
 const LoraFont = Lora({ subsets: ["latin"], weight: ["700"] });
+
+export const metadata: Metadata = {
+  title: "Class room | Contact",
+  description: "Contact page",
+};
 
 const ContactPage = () => {
   return (
@@ -15,12 +19,10 @@ const ContactPage = () => {
       <div className="py-10 max-w-6xl mx-auto px-3">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {contacts.map((item, i) => {
-            const isMiddle = i === 1;
             return (
               <div
                 className={cn(
-                  "p-10 shadow-lg rounded-lg flex gap-3 items-start",
-                  { "border border-slate-600": isMiddle }
+                  "p-10 shadow-lg rounded-lg flex gap-3 items-start border border-slate-600"
                 )}
                 key={item.id}
               >

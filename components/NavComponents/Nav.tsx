@@ -42,13 +42,13 @@ const Nav = () => {
           >
             Class
           </Link>
-          <div className="flex items-center gap-10">
+          <div className="flex items-center gap-5">
             {navLinks.map((item) => {
               return (
                 <Link
                   href={item.href}
                   key={item.id}
-                  className="capitalize font-semibold"
+                  className="capitalize font-semibold p-2"
                 >
                   {item.title}
                 </Link>
