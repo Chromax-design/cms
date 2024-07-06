@@ -53,16 +53,16 @@ const Footer = () => {
         </div>
         <div className="sm:col-span-6 lg:col-span-2">
           <div className="flex flex-col gap-5 text-slate-600">
-            <Link href={""} className="capitalize font-medium hover:text-slate-950">
+            <Link href={"/faqs"} className="capitalize font-medium hover:text-slate-950">
               faq
             </Link>
-            <Link href={""} className="capitalize font-medium hover:text-slate-950">
+            <Link href={"/support"} className="capitalize font-medium hover:text-slate-950">
               support
             </Link>
-            <Link href={""} className="capitalize font-medium hover:text-slate-950">
+            <Link href={"/terms"} className="capitalize font-medium hover:text-slate-950">
               terms
             </Link>
-            <Link href={""} className="capitalize font-medium hover:text-slate-950">
+            <Link href={"/privacy"} className="capitalize font-medium hover:text-slate-950">
               privacy policy
             </Link>
           </div>

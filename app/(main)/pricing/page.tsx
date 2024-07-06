@@ -40,8 +40,8 @@ const PricingPage = () => {
             className="w-full h-auto max-w-md mx-auto md:mr-auto"
           />
         </div>
-        <div className="bg-slate-900 rounded-md px-5 py-10 max-md:space-y-5 md:flex md:justify-between md:items-center gap-10">
-          <h2 className="text-white text-2xl font-semibold">
+        <div className="bg-slate-900 rounded-md px-5 py-10 md:flex md:justify-between md:items-center gap-10">
+          <h2 className="text-white text-2xl font-semibold max-md:mb-5">
             Still have questions? We are eager to hear from you!
           </h2>
           <Link href={"/contact"}>

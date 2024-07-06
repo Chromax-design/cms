@@ -15,6 +15,8 @@ import {
   featureType,
   navLinkType,
   socialType,
+  faqsType,
+  supportTypes,
 } from "./types";
 import { MdTouchApp } from "react-icons/md";
 import { FaMessage } from "react-icons/fa6";
@@ -130,5 +132,74 @@ export const featuresPageContent: featuresPageTypes[] = [
     img: "support.svg",
     title: "Continuous Support and Training",
     desc: "We provide continuous support and training to ensure that all users can make the most of our platform. From onboarding to ongoing assistance, our dedicated support team is here to help you every step of the way.",
+  },
+];
+
+export const faqs: faqsType[] = [
+  {
+    id: 1,
+    question: "What is this School CMS?",
+    answer:
+      "This School CMS is a comprehensive educational platform designed to streamline and enhance the management of educational content, student records, communication, and administrative tasks. It provides an intuitive interface for educators, students, and administrators to interact and manage their educational activities efficiently.",
+  },
+  {
+    id: 2,
+    question: "Who can use this platform?",
+    answer:
+      "The platform is designed for use by educators, students, school administrators, and parents. Each user type has specific features and access levels tailored to their needs.",
+  },
+  {
+    id: 3,
+    question: "What should I do if I encounter technical issues?",
+    answer:
+      'If you face any technical issues, visit the "Support" section and check the common troubleshooting tips. If the problem persists, contact our technical support team via the "Contact Us" form or email support@visualdev.com.',
+  },
+  {
+    id: 4,
+    question: "How do I report a bug?",
+    answer:
+      'To report a bug, go to the "Report a Bug" section under "Support." Provide detailed information about the issue, including screenshots if possible, and submit the form. Our technical team will address it promptly.',
+  },
+  {
+    id: 5,
+    question: "How is my data protected?",
+    answer:
+      "We prioritize the security and privacy of your data. Our platform uses industry-standard encryption and follows strict data protection protocols to ensure your information is safe. For more details, please refer to our Privacy Policy.",
+  },
+  {
+    id: 6,
+    question: "Who has access to my data?",
+    answer:
+      "Access to your data is restricted to authorized personnel only, such as school administrators and teachers. We follow strict data privacy policies to ensure your information is protected. For more details, refer to our Privacy Policy.",
+  },
+  {
+    id: 7,
+    question: " What should I do if the platform is running slow?",
+    answer:
+      "First, check your internet connection. If the issue persists, clear your browser's cache and cookies. If the platform continues to run slowly, contact technical support for further assistance.",
+  },
+];
+
+export const supportPage: supportTypes[] = [
+  {
+    id: 1,
+    title: "Contact information",
+    desc: "For general inquiries, assistance, or technical support, please contact us using one of the methods below:",
+    isWhat: "contact",
+    img: "contact.svg",
+  },
+  {
+    id: 2,
+    title: "Technical Support",
+    desc: "If you encounter any technical issues or need assistance with our platform, our dedicated support team is here to help. Please provide us with the following details when contacting support:",
+    isWhat: "support",
+    img: "support.svg",
+  },
+  {
+    id: 3,
+    title: "feedback",
+    desc: "We value your feedback! If you have suggestions for improvements or features you would like to see added to our platform, please let us know. Your input helps us enhance your experience with our School CMS.",
+    isWhat: 'feedback',
+    img: "feedback.svg",
   },
 ];

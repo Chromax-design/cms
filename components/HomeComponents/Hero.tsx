@@ -5,7 +5,7 @@ import { ImagesSlider } from "@/components/ui/image-slider";
 import { Lora } from "next/font/google";
 const LoraFont = Lora({
   subsets: ["latin"],
-  weight: [ "400",'500','600', "700",],
+  weight: [ "700"],
 });
 
 export const Hero = () => {

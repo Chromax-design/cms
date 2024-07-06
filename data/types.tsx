@@ -32,12 +32,26 @@ export interface contactsType {
   icon: React.ReactElement;
   desc: string;
   title?: string;
-  link?: string
+  link?: string;
 }
 
-export interface featuresPageTypes{
+export interface featuresPageTypes {
   id: number;
   img: string;
   title: string;
-  desc: string
+  desc: string;
+}
+
+export interface faqsType {
+  id: number;
+  question: string;
+  answer: string;
+}
+
+export interface supportTypes {
+  id: number;
+  title: string;
+  desc: string;
+  isWhat?: "contact" | "support" | 'feedback';
+  img: string
 }
