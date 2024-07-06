@@ -1,4 +1,3 @@
-import { LoraFont } from "@/app/layout";
 import PageBanner from "@/components/PageBanner";
 import {
   Accordion,
@@ -8,6 +7,9 @@ import {
 } from "@/components/ui/accordion";
 import { faqs } from "@/data";
 import { Metadata } from "next";
+import { Lora } from "next/font/google";
+
+const LoraFont = Lora({subsets: ['latin'], weight: ['700']})
 
 export const metadata: Metadata = {
   title: "Class room | Faqs",
