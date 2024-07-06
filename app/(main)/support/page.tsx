@@ -1,4 +1,4 @@
-import { LoraFont } from "@/app/layout";
+import { Lora } from "next/font/google";
 import PageBanner from "@/components/PageBanner";
 import { Button } from "@/components/ui/button";
 import { supportPage } from "@/data";
@@ -6,6 +6,8 @@ import { cn } from "@/lib/utils";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+
+const LoraFont = Lora({subsets: ['latin'], weight: ['700']})
 
 export const metadata: Metadata = {
   title: "Class room | Support",
