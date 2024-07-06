@@ -38,7 +38,7 @@ const TermsPage = () => {
                   <li> Modify or copy the materials.</li>
                   <li>
                     Use the materials for any commercial purpose or for any
-                    public display (commercial or non-commercial).
+                    public display &lpar;commercial or non-commercial&rpar;                    .
                   </li>
                   <li>
                     Attempt to decompile or reverse engineer any software
@@ -83,7 +83,7 @@ const TermsPage = () => {
               <li>
                 Our platform allows you to post, link, store, share, and
                 otherwise make available certain information, text, graphics,
-                videos, or other material ("Content"). You are responsible for
+                videos, or other material (&quot;Content&quot;). You are responsible for
                 the Content that you post on our platform, including its
                 legality, reliability, and appropriateness.
               </li>
@@ -106,7 +106,7 @@ const TermsPage = () => {
             <ol className="space-y-2 mt-3 list-inside list-decimal">
               <li>
                 These terms and conditions are governed by and construed in
-                accordance with the laws of [Your Country/State] and you
+                accordance with the laws of Your Country/State and you
                 irrevocably submit to the exclusive jurisdiction of the courts
                 in that location.
               </li>
