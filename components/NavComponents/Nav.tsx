@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useEffect, useState } from "react";
 import TopSocials from "./TopSocials";
 import Link from "next/link";
@@ -54,13 +55,15 @@ const Nav = () => {
                 </Link>
               );
             })}
-            <Button
-              size={"lg"}
-              variant={"outline"}
-              className="px-6 py-2 backdrop-blur-sm border text-white bg-gray-700 text-center mx-auto  rounded-lg relative"
-            >
-              Login
-            </Button>
+            <Link href={"/login"}>
+              <Button
+                size={"lg"}
+                variant={"outline"}
+                className="px-6 py-2 backdrop-blur-sm border text-white bg-gray-700 text-center mx-auto  rounded-lg relative"
+              >
+                Login
+              </Button>
+            </Link>
           </div>
         </div>
       </nav>

@@ -1,3 +1,5 @@
+import { z } from "zod";
+
 export interface socialType {
   id: number;
   alt: string;
@@ -55,3 +57,10 @@ export interface supportTypes {
   isWhat?: "contact" | "support" | 'feedback';
   img: string
 }
+
+export const loginSchema = z.object({
+  email: z.string().email({ message: "Please enter a valid email" }),
+  password: z
+    .string()
+    .min(7, { message: "Password should be at least 7 characters long" }),
+});
