@@ -27,7 +27,7 @@ const MobileMenu = () => {
           />
         </Button>
       </SheetTrigger>
-      <SheetContent side={"left"} className="w-[16rem] !p-0">
+      <SheetContent side={"left"} className="w-[16rem] !p-0 !pb-5">
         <div className="h-screen overflow-y-scroll w-full p-5">
           <Link
             href={"/"}
