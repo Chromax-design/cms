@@ -27,7 +27,7 @@ const MobileMenu = () => {
           />
         </Button>
       </SheetTrigger>
-      <SheetContent side={"left"} className="w-[16rem] !p-0 !pb-5">
+      <SheetContent side={"left"} className="w-[16rem] !p-0">
         <div className="h-screen overflow-y-scroll w-full p-5">
           <Link
             href={"/"}
@@ -61,7 +61,7 @@ const MobileMenu = () => {
 
             <div>
               <span className="uppercase text-xs">others</span>
-              <div className="flex flex-col gap-2 mt-3">
+              <div className="flex flex-col gap-2 mt-3 pb-5">
                 {OtherLinks.map((item) => {
                   const isActive =
                     item.link == pathname || pathname.startsWith(item.link);
