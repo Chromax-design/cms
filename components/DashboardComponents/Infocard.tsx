@@ -16,7 +16,7 @@ const Infocard = ({
         <span className="text-sm uppercase tracking-widest">{title}</span>
         <h2 className="font-bold text-3xl">{count}</h2>
       </div>
-      <span className="rounded-full p-4 bg-gray-100 text-3xl">{icon}</span>
+      <span className="rounded-full p-4 bg-secondary text-3xl">{icon}</span>
     </Card>
   );
 };

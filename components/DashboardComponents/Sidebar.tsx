@@ -12,7 +12,7 @@ const Sidebar = () => {
   const pathname = usePathname();
 
   return (
-    <section className="hidden xl:block fixed top-0 left-0 h-screen overflow-y-scroll bg-white w-[14rem] shadow-sm z-20">
+    <section className="hidden xl:block fixed top-0 left-0 h-screen overflow-y-scroll bg-background w-[14rem] shadow-sm z-20">
       <div className="h-screen p-5 space-y-4">
         <Link
           href={"/dashboard"}
@@ -31,8 +31,8 @@ const Sidebar = () => {
                     href={item.link}
                     key={item.id}
                     className={cn(
-                      "capitalize p-2 flex gap-2 items-center hover:bg-slate-100",
-                      { "bg-slate-100": isActive }
+                      "capitalize p-2 flex gap-2 items-center hover:bg-muted",
+                      { "bg-muted": isActive }
                     )}
                   >
                     <span className="text-lg">{item.icon}</span>
@@ -54,8 +54,8 @@ const Sidebar = () => {
                     href={item.link}
                     key={item.id}
                     className={cn(
-                      "capitalize p-2 flex gap-2 items-center hover:bg-slate-100",
-                      { "bg-slate-100": isActive }
+                      "capitalize p-2 flex gap-2 items-center hover:bg-muted",
+                      { "bg-muted": isActive }
                     )}
                   >
                     <span className="text-lg">{item.icon}</span>

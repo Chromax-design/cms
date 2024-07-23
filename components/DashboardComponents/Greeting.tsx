@@ -23,7 +23,7 @@ const Greeting = ({userName}:{userName: string}) => {
           width={100}
           height={100}
           alt="welcome image"
-          className="w-full max-w-[270px] max-sm:order-1"
+          className="w-full max-w-[270px] max-sm:order-1 shadow-sm"
         />
       </div>
       <Link href={'/dashboard/courses'}>

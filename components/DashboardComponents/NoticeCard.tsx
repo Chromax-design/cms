@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/table";
 import { FaEye } from "react-icons/fa";
 import Link from "next/link";
+import { EyeIcon } from "lucide-react";
 
 const NoticeCard = () => {
   return (
@@ -37,7 +38,7 @@ const NoticeCard = () => {
                 </TableCell>
                 <TableCell className="text-right text-xs">
                   <Link href={`/dashboard/notice/${item.id}`}>
-                    <FaEye className="text-xl text-slate-700"/>
+                    <EyeIcon className="w-[1.2rem] h-[1.2rem]" />
                   </Link>
                 </TableCell>
               </TableRow>

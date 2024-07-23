@@ -5,12 +5,15 @@ import Link from "next/link";
 import NotificationsBar from "./NotificationsBar";
 import { Lora } from "next/font/google";
 import MobileMenu from "./MobileMenu";
+import { ModeToggler } from "./modeToggler";
+import { Button } from "../ui/button";
+import { Volume2Icon } from "lucide-react";
 
 const LoraFont = Lora({ subsets: ["latin"], weight: ["700"] });
 
 const TopBar = () => {
   return (
-    <nav className="bg-white fixed top-0 left-0 w-full py-3 shadow-sm px-5 z-10">
+    <nav className="bg-background/30 fixed top-0 left-0 w-full py-3 shadow-sm px-5 z-10 border-b backdrop-blur-sm">
       <div className="flex justify-between items-center">
         <div className="flex gap-5">
           <Link
@@ -21,10 +24,13 @@ const TopBar = () => {
           </Link>
           <MobileMenu />
         </div>
-        <div className="flex gap-4 items-center">
+        <div className="flex items-center">
+          <ModeToggler />
           <NotificationsBar />
           <Link href={""}>
-            <FaVolumeUp className="text-lg text-slate-500 hover:text-gray-600" />
+            <Button variant={"outline"} size={'icon'} className="outline-none border-none rounded-full">
+              <Volume2Icon className="h-[1.2rem] w-[1.2rem]" />
+            </Button>
           </Link>
           <AvatarComponent />
         </div>

@@ -1,18 +1,28 @@
+import { BellIcon } from "lucide-react";
 import { Button } from "../ui/button";
-import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "../ui/sheet";
-import { FaBell } from "react-icons/fa";
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "../ui/sheet";
 
 const NotificationsBar = () => {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant="outline" className="!outline-none !border-none !p-0 !bg-transparent">
-          <FaBell className="text-lg text-slate-500 hover:text-slate-600 hover:cursor-pointer" />
+        <Button
+          variant="outline"
+          size={"icon"}
+          className="!outline-none !border-none  rounded-full"
+        >
+          <BellIcon className="h-[1.2rem] w-[1.2rem]" />
         </Button>
       </SheetTrigger>
       <SheetContent side={"right"}>
         <SheetHeader>
-            <SheetTitle className="!text-sm">Notifications</SheetTitle>
+          <SheetTitle className="!text-sm">Notifications</SheetTitle>
         </SheetHeader>
       </SheetContent>
     </Sheet>
