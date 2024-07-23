@@ -10,7 +10,10 @@ import {
   FiSun,
   FiBell,
   FiGift,
+  FiSettings,
+  FiSpeaker,
 } from "react-icons/fi";
+import { FaChalkboardTeacher } from "react-icons/fa";
 import { LinkTypes, NoticeTypes } from "./types";
 
 export const StudentLinks: LinkTypes[] = [
@@ -28,36 +31,42 @@ export const StudentLinks: LinkTypes[] = [
   },
   {
     id: 3,
+    link: "/dashboard/teachers",
+    title: "my teachers",
+    icon: <FaChalkboardTeacher />,
+  },
+  {
+    id: 4,
     link: "/dashboard/assignment",
     title: "assignment",
     icon: <FiClipboard />,
   },
   {
-    id: 4,
+    id: 5,
     link: "/dashboard/online-classes",
     title: "online classes",
     icon: <FiVideo />,
   },
   {
-    id: 5,
+    id: 6,
     link: "/dashboard/attendance",
     title: "attendance",
     icon: <FiCheckSquare />,
   },
   {
-    id: 6,
+    id: 7,
     link: "/dashboard/schedule",
     title: "class schedule",
     icon: <FiCalendar />,
   },
   {
-    id: 7,
-    link: "/dashboard/exams-results",
+    id: 8,
+    link: "/dashboard/exams",
     title: "exams and results",
     icon: <FiAward />,
   },
   {
-    id: 8,
+    id: 9,
     link: "/dashboard/messages",
     title: "messages",
     icon: <FiMail />,
@@ -67,21 +76,15 @@ export const StudentLinks: LinkTypes[] = [
 export const OtherLinks: LinkTypes[] = [
   {
     id: 1,
-    link: "/dashboard/notice",
-    title: "notice board",
-    icon: <FiBell />,
+    link: "/dashboard/profile",
+    title: "profile",
+    icon: <FiSettings />,
   },
   {
     id: 2,
-    link: "/dashboard/holiday",
-    title: "holiday",
-    icon: <FiSun />,
-  },
-  {
-    id: 3,
-    link: "/dashboard/events",
-    title: "all events",
-    icon: <FiGift />,
+    link: "/dashboard/notice",
+    title: "notice",
+    icon: <FiSpeaker />,
   },
 ];
 
@@ -155,5 +158,88 @@ export const NoticeDemo: NoticeTypes[] = [
     date: "10 Jul 2024",
     description:
       "Orientation for the new school year will be held on 10th July. New students and their parents are encouraged to attend.",
+  },
+];
+
+export const ScheduleDemo = [
+  {
+    day: "Monday",
+    subjects: [
+      { id: 1, time: "08:00 AM - 08:45 AM", subject: "Math" },
+      { id: 2, time: "08:45 AM - 09:30 AM", subject: "English" },
+      { id: 3, time: "09:30 AM - 10:15 AM", subject: "Science" },
+      { id: 4, time: "10:15 AM - 11:00 AM", subject: "History" },
+      { id: 5, time: "11:00 AM - 11:45 AM", subject: "Geography" },
+      { id: 6, time: "11:45 AM - 12:30 PM", subject: "Physical Education" },
+      { id: "break", time: "12:30 PM - 01:00 PM", subject: "Break" },
+      { id: 7, time: "01:00 PM - 01:45 PM", subject: "Art" },
+      { id: 8, time: "01:45 PM - 02:30 PM", subject: "Music" },
+      { id: 9, time: "02:30 PM - 03:15 PM", subject: "Computer Science" },
+      { id: 10, time: "03:15 PM - 04:00 PM", subject: "Drama" },
+    ],
+  },
+  {
+    day: "Tuesday",
+    subjects: [
+      { id: 11, time: "08:00 AM - 08:45 AM", subject: "Biology" },
+      { id: 12, time: "08:45 AM - 09:30 AM", subject: "Chemistry" },
+      { id: 13, time: "09:30 AM - 10:15 AM", subject: "Physics" },
+      { id: 14, time: "10:15 AM - 11:00 AM", subject: "Mathematics" },
+      { id: 15, time: "11:00 AM - 11:45 AM", subject: "Literature" },
+      { id: 16, time: "11:45 AM - 12:30 PM", subject: "Economics" },
+      { id: "break", time: "12:30 PM - 01:00 PM", subject: "Break" },
+      { id: 17, time: "01:00 PM - 01:45 PM", subject: "Sociology" },
+      { id: 18, time: "01:45 PM - 02:30 PM", subject: "Psychology" },
+      { id: 19, time: "02:30 PM - 03:15 PM", subject: "Political Science" },
+      { id: 20, time: "03:15 PM - 04:00 PM", subject: "Philosophy" },
+    ],
+  },
+  {
+    day: "Wednesday",
+    subjects: [
+      { id: 21, time: "08:00 AM - 08:45 AM", subject: "Math" },
+      { id: 22, time: "08:45 AM - 09:30 AM", subject: "English" },
+      { id: 23, time: "09:30 AM - 10:15 AM", subject: "Science" },
+      { id: 24, time: "10:15 AM - 11:00 AM", subject: "History" },
+      { id: 25, time: "11:00 AM - 11:45 AM", subject: "Geography" },
+      { id: 26, time: "11:45 AM - 12:30 PM", subject: "Physical Education" },
+      { id: "break", time: "12:30 PM - 01:00 PM", subject: "Break" },
+      { id: 27, time: "01:00 PM - 01:45 PM", subject: "Art" },
+      { id: 28, time: "01:45 PM - 02:30 PM", subject: "Music" },
+      { id: 29, time: "02:30 PM - 03:15 PM", subject: "Computer Science" },
+      { id: 30, time: "03:15 PM - 04:00 PM", subject: "Drama" },
+    ],
+  },
+  {
+    day: "Thursday",
+    subjects: [
+      { id: 31, time: "08:00 AM - 08:45 AM", subject: "Biology" },
+      { id: 32, time: "08:45 AM - 09:30 AM", subject: "Chemistry" },
+      { id: 33, time: "09:30 AM - 10:15 AM", subject: "Physics" },
+      { id: 34, time: "10:15 AM - 11:00 AM", subject: "Mathematics" },
+      { id: 35, time: "11:00 AM - 11:45 AM", subject: "Literature" },
+      { id: 36, time: "11:45 AM - 12:30 PM", subject: "Economics" },
+      { id: "break", time: "12:30 PM - 01:00 PM", subject: "Break" },
+      { id: 37, time: "01:00 PM - 01:45 PM", subject: "Sociology" },
+      { id: 38, time: "01:45 PM - 02:30 PM", subject: "Psychology" },
+      { id: 39, time: "02:30 PM - 03:15 PM", subject: "Political Science" },
+      { id: 40, time: "03:15 PM - 04:00 PM", subject: "Philosophy" },
+    ],
+  },
+  {
+    day: "Friday",
+    subjects: [
+      { id: 41, time: "08:00 AM - 08:45 AM", subject: "Math" },
+      { id: 42, time: "08:45 AM - 09:30 AM", subject: "English" },
+      { id: 43, time: "09:30 AM - 10:15 AM", subject: "Science" },
+      { id: 44, time: "10:15 AM - 11:00 AM", subject: "History" },
+      { id: 45, time: "11:00 AM - 11:45 AM", subject: "Geography" },
+      { id: 46, time: "11:45 AM - 12:30 PM", subject: "Physical Education" },
+      { id: "break", time: "12:30 PM - 01:00 PM", subject: "Break" },
+      { id: 47, time: "01:00 PM - 01:45 PM", subject: "Art" },
+      { id: 48, time: "01:45 PM - 02:30 PM", subject: "Music" },
+      { id: 49, time: "02:30 PM - 03:15 PM", subject: "Computer Science" },
+      { id: 50, time: "03:15 PM - 04:00 PM", subject: "Drama" },
+    ],
   },
 ];
