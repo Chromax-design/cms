@@ -12,6 +12,7 @@ import { Lora } from "next/font/google";
 import { OtherLinks, StudentLinks } from "@/data/dashboard";
 import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation";
+import { MenuIcon } from "lucide-react";
 
 const LoraFont = Lora({ subsets: ["latin"], weight: ["700"] });
 const MobileMenu = () => {
@@ -19,12 +20,8 @@ const MobileMenu = () => {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant="outline" className="outline-none !px-3 !py-1">
-          <img
-            src="/assets/hamburger.png"
-            className="w-6"
-            alt="hamburger icon"
-          />
+        <Button variant="outline" className="outline-none" size={'icon'}>
+          <MenuIcon className="w-[1.2rem] h-[1.2rem]" />
         </Button>
       </SheetTrigger>
       <SheetContent side={"left"} className="w-[16rem] !p-0">
@@ -46,8 +43,8 @@ const MobileMenu = () => {
                       <Link
                         href={item.link}
                         className={cn(
-                          "capitalize p-2 flex gap-2 items-center hover:bg-slate-100",
-                          { "bg-slate-100": isActive }
+                          "capitalize p-2 flex gap-2 items-center hover:bg-muted",
+                          { "bg-muted": isActive }
                         )}
                       >
                         <span className="text-lg">{item.icon}</span>
@@ -70,8 +67,8 @@ const MobileMenu = () => {
                       <Link
                         href={item.link}
                         className={cn(
-                          "capitalize p-2 flex gap-2 items-center hover:bg-slate-100",
-                          { "bg-slate-100": isActive }
+                          "capitalize p-2 flex gap-2 items-center hover:bg-muted",
+                          { "bg-muted": isActive }
                         )}
                       >
                         <span className="text-lg">{item.icon}</span>

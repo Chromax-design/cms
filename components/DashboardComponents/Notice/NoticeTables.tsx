@@ -61,7 +61,7 @@ const NoticeTables = <TData, TValue>({
           onChange={(e) =>
             table.getColumn("title")?.setFilterValue(e.target.value)
           }
-          className="max-w-sm"
+          className="max-w-sm !outline-secondary"
         />
       </div>
       <div>
