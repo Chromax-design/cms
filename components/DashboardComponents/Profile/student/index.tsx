@@ -26,11 +26,11 @@ const StudentProfile = () => {
       <StudentProfileCard />
       <Card className="col-span-12 lg:col-span-7 p-3">
         <Tabs defaultValue="personal" className="w-full">
-          <TabsList className="w-full flex">
+          <TabsList className="w-full !flex overflow-x-auto justify-between">
             {StudentTabList.map((tab) => (
               <TabsTrigger
                 value={tab.title}
-                className="w-full capitalize"
+                className="w-full capitalize !flex"
                 key={tab.id}
               >
                 {tab.title}

@@ -32,7 +32,7 @@ const AvatarComponent = () => {
           </div>
           <div className="p-3">
             <DropdownMenuItem className="!text-xs hover:cursor-pointer">
-              <Link href={""}>Profile</Link>
+              <Link href={"/dashboard/profile"}>Profile</Link>
             </DropdownMenuItem>
             <DropdownMenuItem className="!text-xs hover:cursor-pointer">
               <Link href={""}>Logout</Link>
