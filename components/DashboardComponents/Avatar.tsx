@@ -20,21 +20,21 @@ const AvatarComponent = () => {
           </Avatar>
         </DropdownMenuTrigger>
         <DropdownMenuContent className="mr-5">
-          <div className="bg-slate-100 px-3">
-            <DropdownMenuItem className="!text-xs flex gap-2 text-gray-700">
+          <div className="">
+            <DropdownMenuItem className="!text-xs flex gap-2">
               Signed in as{" "}
-              <span className="bg-blue-100 p-2 text-blue-600"> Student</span>
+              <span className="p-1 bg-primary/50 backdrop-blur-sm shadow-sm"> Student</span>
             </DropdownMenuItem>
-            <DropdownMenuItem className="!text-xs text-gray-700">
+            <DropdownMenuItem className="!text-xs !py-3">
               student@mail.com
             </DropdownMenuItem>
             <DropdownMenuSeparator />
           </div>
           <div className="p-3">
-            <DropdownMenuItem className="!text-xs text-gray-700 hover:cursor-pointer">
+            <DropdownMenuItem className="!text-xs hover:cursor-pointer">
               <Link href={""}>Profile</Link>
             </DropdownMenuItem>
-            <DropdownMenuItem className="!text-xs text-gray-700 hover:cursor-pointer">
+            <DropdownMenuItem className="!text-xs hover:cursor-pointer">
               <Link href={""}>Logout</Link>
             </DropdownMenuItem>
           </div>
