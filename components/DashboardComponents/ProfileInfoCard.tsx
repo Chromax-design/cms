@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import { Button } from "../ui/button";
 import { Card } from "../ui/card";
@@ -34,12 +35,14 @@ const ProfileInfoCard = () => {
           <span className="capitalize font-semibold">grade: </span> JSS 1
         </p>
       </div>
-      <Button
-        variant={"secondary"}
-        className="capitalize text-sm tracking-wider mt-4"
-      >
-        view profile
-      </Button>
+      <Link href={"/dashboard/profile"}>
+        <Button
+          variant={"secondary"}
+          className="capitalize text-sm tracking-wider mt-4"
+        >
+          view profile
+        </Button>
+      </Link>
     </Card>
   );
 };
