@@ -14,7 +14,7 @@ import {
   FiSpeaker,
 } from "react-icons/fi";
 import { FaChalkboardTeacher } from "react-icons/fa";
-import { LinkTypes, NoticeTypes } from "./types";
+import { LinkTypes, NoticeTypes, StudentTabListTypes } from "./types";
 
 export const StudentLinks: LinkTypes[] = [
   {
@@ -158,6 +158,29 @@ export const NoticeDemo: NoticeTypes[] = [
     date: "10 Jul 2024",
     description:
       "Orientation for the new school year will be held on 10th July. New students and their parents are encouraged to attend.",
+  },
+];
+
+export const StudentTabList:StudentTabListTypes[] = [
+  {
+    id: 1,
+    title: "personal",
+  },
+  {
+    id: 2,
+    title: "contact",
+  },
+  {
+    id: 3,
+    title: "parents",
+  },
+  {
+    id: 4,
+    title: "health",
+  },
+  {
+    id: 4,
+    title: "others",
   },
 ];
 

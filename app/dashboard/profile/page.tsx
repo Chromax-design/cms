@@ -1,6 +1,7 @@
 import BreadCrumb from "@/components/DashboardComponents/BreadCrumb";
 import PageTitle from "@/components/DashboardComponents/PageTitle";
 import { Metadata } from "next";
+import StudentProfile from "@/components/DashboardComponents/Profile/student";
 
 export const metadata: Metadata = {
   title: "Classroom | Profile",
@@ -9,9 +10,10 @@ export const metadata: Metadata = {
 
 const ProfilePage = () => {
   return (
-    <section className="space-y-3">
+    <section className="space-y-4">
       <BreadCrumb title="Profile" />
       <PageTitle title="My Profile" />
+      <StudentProfile />
     </section>
   );
 };

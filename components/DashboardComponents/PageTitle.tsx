@@ -8,7 +8,7 @@ const PageTitle = ({ title }: { title: string }) => {
   return (
     <Card>
       <CardHeader className="!p-4">
-        <CardTitle className="!text-lg">{title}</CardTitle>
+        <CardTitle className="!text-lg !font-medium">{title}</CardTitle>
       </CardHeader>
     </Card>
   );

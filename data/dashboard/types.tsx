@@ -11,3 +11,8 @@ export interface NoticeTypes {
   date: string | Date;
   description: string;
 }
+
+export interface StudentTabListTypes {
+  id: number;
+  title: 'personal' | 'contact' | 'parents' | 'health' | 'others';
+}
