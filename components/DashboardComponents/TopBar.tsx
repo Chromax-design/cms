@@ -6,14 +6,12 @@ import NotificationsBar from "./NotificationsBar";
 import { Lora } from "next/font/google";
 import MobileMenu from "./MobileMenu";
 import { ModeToggler } from "./modeToggler";
-import { Button } from "../ui/button";
-import { Volume2Icon } from "lucide-react";
 
 const LoraFont = Lora({ subsets: ["latin"], weight: ["700"] });
 
 const TopBar = () => {
   return (
-    <nav className="bg-background/30 fixed top-0 left-0 w-full py-3 shadow-sm px-5 z-10 border-b backdrop-blur-sm">
+    <nav className="bg-background/30 fixed top-0 left-0 w-full py-3 px-5 z-10 border-b backdrop-blur-sm">
       <div className="flex justify-between items-center">
         <div className="flex gap-2">
           <MobileMenu />

@@ -16,7 +16,7 @@ const Sidebar = () => {
       <div className="h-screen p-5 space-y-4">
         <Link
           href={"/dashboard"}
-          className={`${LoraFont.className} capitalize`}
+          className={`${LoraFont.className} capitalize text-xl`}
         >
           Logo here
         </Link>
@@ -31,7 +31,7 @@ const Sidebar = () => {
                     href={item.link}
                     key={item.id}
                     className={cn(
-                      "capitalize p-2 flex gap-2 items-center hover:bg-muted",
+                      "capitalize p-2 flex gap-2 items-center hover:bg-muted rounded-md",
                       { "bg-muted": isActive }
                     )}
                   >
@@ -54,7 +54,7 @@ const Sidebar = () => {
                     href={item.link}
                     key={item.id}
                     className={cn(
-                      "capitalize p-2 flex gap-2 items-center hover:bg-muted",
+                      "capitalize p-2 flex gap-2 items-center hover:bg-muted rounded-md",
                       { "bg-muted": isActive }
                     )}
                   >

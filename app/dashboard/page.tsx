@@ -17,14 +17,14 @@ export const metadata: Metadata = {
 const DashboardPage = async () => {
   const session = await auth();
   return (
-    <section className="space-y-3">
+    <section className="space-y-4">
       <BreadCrumb title="Home" />
       <PageTitle title="Dashboard" />
-      <div className="grid grid-cols-12 gap-3 items-center">
+      <div className="grid grid-cols-12 gap-4 items-center">
         <div className="lg:col-span-8 col-span-12">
           <Greeting userName="Kunle" />
         </div>
-        <div className="col-span-12 lg:col-span-4 gap-3 flex flex-col sm:flex-row lg:flex-col">
+        <div className="col-span-12 lg:col-span-4 gap-4 flex flex-col sm:flex-row lg:flex-col">
           <Infocard
             title="courses"
             count={7}
@@ -37,7 +37,7 @@ const DashboardPage = async () => {
           />
         </div>
       </div>
-      <div className="grid grid-cols-12 gap-3">
+      <div className="grid grid-cols-12 gap-4">
         <div className="col-span-12 sm:col-span-5">
           <ProfileInfoCard />
         </div>

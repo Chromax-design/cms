@@ -43,7 +43,7 @@ const MobileMenu = () => {
                       <Link
                         href={item.link}
                         className={cn(
-                          "capitalize p-2 flex gap-2 items-center hover:bg-muted",
+                          "capitalize p-2 flex gap-2 items-center hover:bg-muted rounded-md",
                           { "bg-muted": isActive }
                         )}
                       >
@@ -67,7 +67,7 @@ const MobileMenu = () => {
                       <Link
                         href={item.link}
                         className={cn(
-                          "capitalize p-2 flex gap-2 items-center hover:bg-muted",
+                          "capitalize p-2 flex gap-2 items-center hover:bg-muted rounded-md",
                           { "bg-muted": isActive }
                         )}
                       >

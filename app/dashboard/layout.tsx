@@ -1,3 +1,4 @@
+import Footer from "@/components/DashboardComponents/Footer";
 import Sidebar from "@/components/DashboardComponents/Sidebar";
 import TopBar from "@/components/DashboardComponents/TopBar";
 import { ThemeProvider } from "@/themeProvider";
@@ -13,9 +14,10 @@ const dashboardLayout = ({ children }: { children: React.ReactNode }) => {
       >
         <TopBar />
         <Sidebar />
-        <div className="xl:ml-[14rem] py-[6rem] p-4 lg:px-[2rem] h-full">
+        <div className="xl:ml-[14rem] py-[6rem] p-4 lg:px-[2rem] h-full relative">
           {children}
         </div>
+        <Footer />
       </ThemeProvider>
     </main>
   );

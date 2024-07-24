@@ -50,7 +50,7 @@ export const Columns: ColumnDef<NoticeTypes>[] = [
       const data = row.original;
       return (
         <Link href={`/dashboard/notice/${data.id}`}>
-          <FaEye className="text-lg text-slate-600" title="view"/>
+          <FaEye className="text-lg text-primary" title="view"/>
         </Link>
       );
     },
