@@ -15,8 +15,8 @@ const AvatarComponent = () => {
       <DropdownMenu>
         <DropdownMenuTrigger className="!outline-none !border-none">
           <Avatar>
-            <AvatarImage src="https://github.com/shadcn.png" />
-            <AvatarFallback>CN</AvatarFallback>
+            <AvatarImage src="https://randomuser.me/api/portraits/women/2.jpg" />
+            <AvatarFallback>KA</AvatarFallback>
           </Avatar>
         </DropdownMenuTrigger>
         <DropdownMenuContent className="mr-5">

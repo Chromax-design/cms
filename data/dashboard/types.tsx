@@ -14,5 +14,16 @@ export interface NoticeTypes {
 
 export interface StudentTabListTypes {
   id: number;
-  title: 'personal' | 'contact' | 'parents' | 'health' | 'others';
+  title: "personal" | "contact" | "parents" | "health" | "others";
+}
+
+export interface TeacherDemoTypes {
+  id: string;
+  avatar: string;
+  name: string;
+  email: string;
+  address: string;
+  religion: string;
+  gender: string;
+  phoneNumber: string;
 }

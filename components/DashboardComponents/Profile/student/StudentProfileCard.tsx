@@ -7,7 +7,9 @@ const StudentProfileCard = () => {
     <Card className="col-span-12 lg:col-span-5 p-3">
       <div className="flex justify-center items-center flex-col gap-2">
         <Avatar className="w-[10rem] h-[10rem]">
-          <AvatarImage src="https://github.com/shadcn.png" />
+          <AvatarImage
+            src="https://randomuser.me/api/portraits/women/2.jpg"
+          />
           <AvatarFallback className="text-3xl">CN</AvatarFallback>
         </Avatar>
         <div>
@@ -33,11 +35,12 @@ const StudentProfileCard = () => {
         </p>
         <hr />
         <p className="text-sm tracking-wider py-2">
-          <span className="capitalize font-medium">student ID: </span> UBE-112345
+          <span className="capitalize font-medium">student ID: </span>{" "}
+          UBE-112345
         </p>
       </div>
     </Card>
   );
 };
 
-export default StudentProfileCard
+export default StudentProfileCard;

@@ -7,14 +7,16 @@ import {
   FiCalendar,
   FiAward,
   FiMail,
-  FiSun,
-  FiBell,
-  FiGift,
   FiSettings,
   FiSpeaker,
 } from "react-icons/fi";
 import { FaChalkboardTeacher } from "react-icons/fa";
-import { LinkTypes, NoticeTypes, StudentTabListTypes } from "./types";
+import {
+  LinkTypes,
+  NoticeTypes,
+  StudentTabListTypes,
+  TeacherDemoTypes,
+} from "./types";
 
 export const StudentLinks: LinkTypes[] = [
   {
@@ -161,7 +163,7 @@ export const NoticeDemo: NoticeTypes[] = [
   },
 ];
 
-export const StudentTabList:StudentTabListTypes[] = [
+export const StudentTabList: StudentTabListTypes[] = [
   {
     id: 1,
     title: "personal",
@@ -266,3 +268,107 @@ export const ScheduleDemo = [
     ],
   },
 ];
+
+export const TeacherDemo: TeacherDemoTypes[] = [
+  {
+    id: '1',
+    name: 'Jordan Mitchell',
+    email: 'JordanMitchell@teleworm.us',
+    address: '123 Maple Street, Springfield',
+    religion: 'Christianity',
+    gender: 'Male',
+    phoneNumber: '+1 555-123-4567',
+    avatar: 'https://randomuser.me/api/portraits/men/1.jpg',
+  },
+  {
+    id: '2',
+    name: 'Emily Johnson',
+    email: 'EmilyJohnson@dayrep.com',
+    address: '456 Oak Avenue, Shelbyville',
+    religion: 'Judaism',
+    gender: 'Female',
+    phoneNumber: '+1 555-234-5678',
+    avatar: 'https://randomuser.me/api/portraits/women/2.jpg',
+  },
+  {
+    id: '3',
+    name: 'Michael Smith',
+    email: 'MichaelSmith@jourrapide.com',
+    address: '789 Pine Road, Capital City',
+    religion: 'Islam',
+    gender: 'Male',
+    phoneNumber: '+1 555-345-6789',
+    avatar: 'https://randomuser.me/api/portraits/men/3.jpg',
+  },
+  {
+    id: '4',
+    name: 'Sophia Brown',
+    email: 'SophiaBrown@teleworm.us',
+    address: '321 Birch Lane, Ogdenville',
+    religion: 'Hinduism',
+    gender: 'Female',
+    phoneNumber: '+1 555-456-7890',
+    avatar: 'https://randomuser.me/api/portraits/women/4.jpg',
+  },
+  {
+    id: '5',
+    name: 'James Williams',
+    email: 'JamesWilliams@dayrep.com',
+    address: '654 Cedar Court, North Haverbrook',
+    religion: 'Buddhism',
+    gender: 'Male',
+    phoneNumber: '+1 555-567-8901',
+    avatar: 'https://randomuser.me/api/portraits/men/5.jpg',
+  },
+  {
+    id: '6',
+    name: 'Ava Davis',
+    email: 'AvaDavis@jourrapide.com',
+    address: '987 Willow Drive, Brockway',
+    religion: 'Atheism',
+    gender: 'Female',
+    phoneNumber: '+1 555-678-9012',
+    avatar: 'https://randomuser.me/api/portraits/women/6.jpg',
+  },
+  {
+    id: '7',
+    name: 'William Martinez',
+    email: 'WilliamMartinez@teleworm.us',
+    address: '159 Elm Street, Springfield',
+    religion: 'Christianity',
+    gender: 'Male',
+    phoneNumber: '+1 555-789-0123',
+    avatar: 'https://randomuser.me/api/portraits/men/7.jpg',
+  },
+  {
+    id: '8',
+    name: 'Mia Hernandez',
+    email: 'MiaHernandez@dayrep.com',
+    address: '753 Maple Avenue, Shelbyville',
+    religion: 'Judaism',
+    gender: 'Female',
+    phoneNumber: '+1 555-890-1234',
+    avatar: 'https://randomuser.me/api/portraits/women/8.jpg',
+  },
+  {
+    id: '9',
+    name: 'Alexander Martinez',
+    email: 'AlexanderMartinez@jourrapide.com',
+    address: '852 Oak Lane, Capital City',
+    religion: 'Islam',
+    gender: 'Male',
+    phoneNumber: '+1 555-901-2345',
+    avatar: 'https://randomuser.me/api/portraits/men/9.jpg',
+  },
+  {
+    id: '10',
+    name: 'Isabella Gonzalez',
+    email: 'IsabellaGonzalez@teleworm.us',
+    address: '741 Pine Street, Ogdenville',
+    religion: 'Hinduism',
+    gender: 'Female',
+    phoneNumber: '+1 555-012-3456',
+    avatar: 'https://randomuser.me/api/portraits/women/10.jpg',
+  }
+];
+
