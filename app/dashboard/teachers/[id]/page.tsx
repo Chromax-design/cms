@@ -2,7 +2,7 @@ import BreadCrumb from "@/components/DashboardComponents/BreadCrumb";
 import PageTitle from "@/components/DashboardComponents/PageTitle";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card } from "@/components/ui/card";
-import { getInitials } from "@/lib/utitlities";
+import { getInitials } from "@/lib/utilities";
 import { getSingleTeacher } from "@/server/TeacherActions";
 import { Metadata } from "next";
 import {

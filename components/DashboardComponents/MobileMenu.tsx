@@ -20,7 +20,7 @@ const MobileMenu = () => {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant="outline" className="outline-none" size={'icon'}>
+        <Button variant="outline" className="outline-none" size={"icon"}>
           <MenuIcon className="w-[1.2rem] h-[1.2rem]" />
         </Button>
       </SheetTrigger>
@@ -37,7 +37,7 @@ const MobileMenu = () => {
               <span className="text-xs uppercase">Application</span>
               <div className="flex flex-col gap-2 mt-3">
                 {StudentLinks.map((item) => {
-                  const isActive = item.link == pathname;
+                  const isActive = item.link == pathname || (pathname.startsWith(item.link) && item.link !== "/dashboard");
                   return (
                     <SheetClose asChild key={item.id}>
                       <Link

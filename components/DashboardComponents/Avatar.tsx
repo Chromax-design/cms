@@ -20,7 +20,7 @@ const AvatarComponent = () => {
           </Avatar>
         </DropdownMenuTrigger>
         <DropdownMenuContent className="mr-5">
-          <div className="">
+          <div>
             <DropdownMenuItem className="!text-xs flex gap-2">
               Signed in as{" "}
               <span className="p-1 bg-primary/50 backdrop-blur-sm shadow-sm"> Student</span>
