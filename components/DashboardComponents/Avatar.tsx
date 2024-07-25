@@ -19,7 +19,7 @@ const AvatarComponent = () => {
             <AvatarFallback>KA</AvatarFallback>
           </Avatar>
         </DropdownMenuTrigger>
-        <DropdownMenuContent className="mr-5">
+        <DropdownMenuContent className="mr-5 !min-w-[14rem]">
           <div>
             <DropdownMenuItem className="!text-xs flex gap-2">
               Signed in as{" "}
