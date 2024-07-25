@@ -1,3 +1,5 @@
+"use server";
+
 import { NoticeDemo } from "@/data/dashboard";
 import { NoticeTypes } from "@/data/dashboard/types";
 

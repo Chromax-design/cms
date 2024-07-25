@@ -38,10 +38,10 @@ const DashboardPage = async () => {
         </div>
       </div>
       <div className="grid grid-cols-12 gap-4">
-        <div className="col-span-12 sm:col-span-5">
+        <div className="col-span-12 md:col-span-5">
           <ProfileInfoCard />
         </div>
-        <div className="col-span-12 sm:col-span-7">
+        <div className="col-span-12 md:col-span-7">
           <NoticeCard />
         </div>
       </div>

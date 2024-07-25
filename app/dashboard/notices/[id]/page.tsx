@@ -17,18 +17,18 @@ export const metadata: Metadata = {
   description: "Notices and announcements",
 };
 
-interface paramrsType {
+interface paramsType {
   params: {
     id: string;
   };
 }
 
-const NoticeDetails = async ({ params }: paramrsType) => {
+const NoticeDetails = async ({ params }: paramsType) => {
   const { id } = params;
   const data = await getSingleNotice(id);
   return (
     <section className="space-y-3">
-      <BreadCrumb title="Notices" />
+      <BreadCrumb title="notices" id={data?.id.toString()}/>
       <Card>
         <CardHeader className={`${LoraFont.className} text-2xl `}>{data?.title}</CardHeader>
         <CardContent>

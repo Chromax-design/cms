@@ -8,7 +8,6 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { FaEye } from "react-icons/fa";
 import Link from "next/link";
 import { EyeIcon } from "lucide-react";
 
@@ -24,7 +23,7 @@ const NoticeCard = () => {
           </TableRow>
         </TableHeader>
         <TableBody>
-          {NoticeDemo.slice(0, 4).map((item, i) => {
+          {NoticeDemo.slice(0, 4).map((item) => {
             return (
               <TableRow key={item.id}>
                 <TableCell className="font-medium text-xs w-5">
@@ -37,7 +36,7 @@ const NoticeCard = () => {
                   {item.description.slice(0, 30)}...
                 </TableCell>
                 <TableCell className="text-right text-xs">
-                  <Link href={`/dashboard/notice/${item.id}`}>
+                  <Link href={`/dashboard/notices/${item.id}`}>
                     <EyeIcon className="w-[1.2rem] h-[1.2rem]" />
                   </Link>
                 </TableCell>

@@ -7,7 +7,7 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 
-const BreadCrumb = ({ title }: { title: string }) => {
+const BreadCrumb = ({ title, id }: { title: string; id?: string }) => {
   return (
     <Breadcrumb>
       <BreadcrumbList>
@@ -15,9 +15,21 @@ const BreadCrumb = ({ title }: { title: string }) => {
           <BreadcrumbLink href="/dashboard">Dashboard</BreadcrumbLink>
         </BreadcrumbItem>
         <BreadcrumbSeparator />
-        <BreadcrumbItem>
-          <BreadcrumbPage>{title}</BreadcrumbPage>
-        </BreadcrumbItem>
+        {id ? (
+          <>
+            <BreadcrumbItem>
+              <BreadcrumbLink href={`/dashboard/${title}`} className="capitalize">{title}</BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbPage>view</BreadcrumbPage>
+            </BreadcrumbItem>
+          </>
+        ) : (
+          <BreadcrumbItem>
+            <BreadcrumbPage className="capitalize">{title}</BreadcrumbPage>
+          </BreadcrumbItem>
+        )}
       </BreadcrumbList>
     </Breadcrumb>
   );

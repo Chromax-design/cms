@@ -7,7 +7,7 @@ const ProfileInfoCard = () => {
   return (
     <Card className="p-4">
       <div className="flex gap-5 items-center pb-4 flex-col md:flex-row">
-        <Avatar className="!w-14 !h-14">
+        <Avatar className="w-[10rem] h-[10rem] md:w-14 md:h-14">
           <AvatarImage src="https://randomuser.me/api/portraits/women/2.jpg" />
           <AvatarFallback>KA</AvatarFallback>
         </Avatar>

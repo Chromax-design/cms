@@ -26,4 +26,5 @@ export interface TeacherDemoTypes {
   religion: string;
   gender: string;
   phoneNumber: string;
+  subject: string
 }

@@ -6,7 +6,7 @@ import { Columns } from "@/components/DashboardComponents/Notice/Columns";
 import { getNotices } from "@/server/NoticeActions";
 
 export const metadata: Metadata = {
-  title: "Classroom | Notice",
+  title: "Classroom | Notices",
   description: "Notices and announcements",
 };
 

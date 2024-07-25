@@ -84,7 +84,7 @@ export const OtherLinks: LinkTypes[] = [
   },
   {
     id: 2,
-    link: "/dashboard/notice",
+    link: "/dashboard/notices",
     title: "notice",
     icon: <FiSpeaker />,
   },
@@ -279,6 +279,7 @@ export const TeacherDemo: TeacherDemoTypes[] = [
     gender: 'Male',
     phoneNumber: '+1 555-123-4567',
     avatar: 'https://randomuser.me/api/portraits/men/1.jpg',
+    subject: 'Mathematics',
   },
   {
     id: '2',
@@ -289,6 +290,7 @@ export const TeacherDemo: TeacherDemoTypes[] = [
     gender: 'Female',
     phoneNumber: '+1 555-234-5678',
     avatar: 'https://randomuser.me/api/portraits/women/2.jpg',
+    subject: 'Science',
   },
   {
     id: '3',
@@ -299,6 +301,7 @@ export const TeacherDemo: TeacherDemoTypes[] = [
     gender: 'Male',
     phoneNumber: '+1 555-345-6789',
     avatar: 'https://randomuser.me/api/portraits/men/3.jpg',
+    subject: 'History',
   },
   {
     id: '4',
@@ -309,6 +312,7 @@ export const TeacherDemo: TeacherDemoTypes[] = [
     gender: 'Female',
     phoneNumber: '+1 555-456-7890',
     avatar: 'https://randomuser.me/api/portraits/women/4.jpg',
+    subject: 'English',
   },
   {
     id: '5',
@@ -319,6 +323,7 @@ export const TeacherDemo: TeacherDemoTypes[] = [
     gender: 'Male',
     phoneNumber: '+1 555-567-8901',
     avatar: 'https://randomuser.me/api/portraits/men/5.jpg',
+    subject: 'Physical Education',
   },
   {
     id: '6',
@@ -329,6 +334,7 @@ export const TeacherDemo: TeacherDemoTypes[] = [
     gender: 'Female',
     phoneNumber: '+1 555-678-9012',
     avatar: 'https://randomuser.me/api/portraits/women/6.jpg',
+    subject: 'Music',
   },
   {
     id: '7',
@@ -339,6 +345,7 @@ export const TeacherDemo: TeacherDemoTypes[] = [
     gender: 'Male',
     phoneNumber: '+1 555-789-0123',
     avatar: 'https://randomuser.me/api/portraits/men/7.jpg',
+    subject: 'Art',
   },
   {
     id: '8',
@@ -349,6 +356,7 @@ export const TeacherDemo: TeacherDemoTypes[] = [
     gender: 'Female',
     phoneNumber: '+1 555-890-1234',
     avatar: 'https://randomuser.me/api/portraits/women/8.jpg',
+    subject: 'Geography',
   },
   {
     id: '9',
@@ -359,6 +367,7 @@ export const TeacherDemo: TeacherDemoTypes[] = [
     gender: 'Male',
     phoneNumber: '+1 555-901-2345',
     avatar: 'https://randomuser.me/api/portraits/men/9.jpg',
+    subject: 'Chemistry',
   },
   {
     id: '10',
@@ -369,6 +378,8 @@ export const TeacherDemo: TeacherDemoTypes[] = [
     gender: 'Female',
     phoneNumber: '+1 555-012-3456',
     avatar: 'https://randomuser.me/api/portraits/women/10.jpg',
+    subject: 'Biology',
   }
 ];
+
 

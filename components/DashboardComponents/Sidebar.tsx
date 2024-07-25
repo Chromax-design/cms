@@ -25,7 +25,10 @@ const Sidebar = () => {
             <span className="text-xs uppercase">Application</span>
             <div className="flex flex-col gap-2 mt-3">
               {StudentLinks.map((item) => {
-                const isActive = item.link == pathname;
+                const isActive =
+                  item.link == pathname ||
+                  (pathname.startsWith(item.link) &&
+                    item.link !== "/dashboard");
                 return (
                   <Link
                     href={item.link}
