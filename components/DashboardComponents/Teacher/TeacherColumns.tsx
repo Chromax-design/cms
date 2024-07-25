@@ -7,7 +7,7 @@ import { ArrowUpDown } from "lucide-react";
 import { FaEye } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { getInitials } from "@/lib/utitlities";
+import { getInitials } from "@/lib/utilities";
 
 export const TeacherColumns: ColumnDef<TeacherDemoTypes>[] = [
   {
