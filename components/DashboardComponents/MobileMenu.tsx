@@ -5,6 +5,9 @@ import {
   Sheet,
   SheetClose,
   SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 import Link from "next/link";
@@ -25,6 +28,10 @@ const MobileMenu = () => {
         </Button>
       </SheetTrigger>
       <SheetContent side={"left"} className="w-[16rem] !p-0">
+        <SheetHeader>
+          <SheetTitle />
+          <SheetDescription />
+        </SheetHeader>
         <div className="h-screen overflow-y-scroll w-full p-5">
           <Link
             href={"/"}
@@ -37,7 +44,10 @@ const MobileMenu = () => {
               <span className="text-xs uppercase">Application</span>
               <div className="flex flex-col gap-2 mt-3">
                 {StudentLinks.map((item) => {
-                  const isActive = item.link == pathname || (pathname.startsWith(item.link) && item.link !== "/dashboard");
+                  const isActive =
+                    item.link == pathname ||
+                    (pathname.startsWith(item.link) &&
+                      item.link !== "/dashboard");
                   return (
                     <SheetClose asChild key={item.id}>
                       <Link

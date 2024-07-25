@@ -3,6 +3,7 @@ import { Button } from "../ui/button";
 import {
   Sheet,
   SheetContent,
+  SheetDescription,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
@@ -23,6 +24,7 @@ const NotificationsBar = () => {
       <SheetContent side={"right"}>
         <SheetHeader>
           <SheetTitle className="!text-sm">Notifications</SheetTitle>
+          <SheetDescription />
         </SheetHeader>
       </SheetContent>
     </Sheet>

@@ -3,6 +3,9 @@ import {
   Sheet,
   SheetClose,
   SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { navLinks } from "@/data";
@@ -12,9 +15,19 @@ export const MobileNav = () => {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant="outline"><img src='/assets/hamburger.png' className="w-6" alt="hamburger icon"/></Button>
+        <Button variant="outline">
+          <img
+            src="/assets/hamburger.png"
+            className="w-6"
+            alt="hamburger icon"
+          />
+        </Button>
       </SheetTrigger>
       <SheetContent side={"left"}>
+        <SheetHeader>
+          <SheetTitle />
+          <SheetDescription />
+        </SheetHeader>
         <div className="h-full">
           <Link
             href={"/"}
@@ -26,7 +39,10 @@ export const MobileNav = () => {
             {navLinks.map((item) => {
               return (
                 <SheetClose asChild key={item.id}>
-                  <Link href={item.href} className="capitalize font-semibold border-b py-2">
+                  <Link
+                    href={item.href}
+                    className="capitalize font-semibold border-b py-2"
+                  >
                     {item.title}
                   </Link>
                 </SheetClose>
