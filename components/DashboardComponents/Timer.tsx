@@ -8,7 +8,7 @@ import { Button } from "../ui/button";
 
 const LoraFont = Lora({ subsets: ["latin"], weight: ["400"] });
 
-const timer = () => {
+const Timer = () => {
   const [isDay, setIsDay] = useState(true);
 
   const handleTimeChange = (time: Date) => {
@@ -31,4 +31,4 @@ const timer = () => {
   );
 };
 
-export default timer;
+export default Timer;
