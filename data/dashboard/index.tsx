@@ -12,10 +12,13 @@ import {
 } from "react-icons/fi";
 import { FaChalkboardTeacher } from "react-icons/fa";
 import {
+  AssignmentDemoTypes,
+  CoursesDemoTypes,
   LinkTypes,
   NoticeTypes,
   StudentTabListTypes,
   TeacherDemoTypes,
+  VirtualDemoTypes,
 } from "./types";
 
 export const StudentLinks: LinkTypes[] = [
@@ -382,4 +385,252 @@ export const TeacherDemo: TeacherDemoTypes[] = [
   }
 ];
 
+export const CoursesDemo: CoursesDemoTypes[] = [
+  {
+    id: 1,
+    course: 'Mathematics',
+    teacher: 'John Doe',
+    type: 'mandatory'
+  },
+  {
+    id: 2,
+    course: 'English Literature',
+    teacher: 'Jane Smith',
+    type: 'mandatory'
+  },
+  {
+    id: 3,
+    course: 'Biology',
+    teacher: 'Emily Johnson',
+    type: 'mandatory'
+  },
+  {
+    id: 4,
+    course: 'Chemistry',
+    teacher: 'Michael Brown',
+    type: 'mandatory'
+  },
+  {
+    id: 5,
+    course: 'Physics',
+    teacher: 'Chris Lee',
+    type: 'mandatory'
+  },
+  {
+    id: 6,
+    course: 'History',
+    teacher: 'Sarah Davis',
+    type: 'mandatory'
+  },
+  {
+    id: 7,
+    course: 'Physical Education',
+    teacher: 'David Wilson',
+    type: 'mandatory'
+  },
+  {
+    id: 8,
+    course: 'Art',
+    teacher: 'Anna Martinez',
+    type: 'elective'
+  },
+  {
+    id: 9,
+    course: 'Music',
+    teacher: 'James Anderson',
+    type: 'elective'
+  },
+  {
+    id: 10,
+    course: 'Computer Science',
+    teacher: 'Patricia Thomas',
+    type: 'mandatory'
+  }
+];
+
+export const AssignmentDemo: AssignmentDemoTypes[] = [
+  {
+    id: '1',
+    title: 'Algebra Homework',
+    description: 'Complete the set of algebra problems from the textbook.',
+    deadline: '2024-09-10',
+    course: 'Mathematics',
+    teacher: 'John Doe'
+  },
+  {
+    id: '2',
+    title: 'Essay on Shakespeare',
+    description: 'Write a 1000-word essay on the themes of Shakespeare\'s Hamlet.',
+    deadline: '2024-09-15',
+    course: 'English Literature',
+    teacher: 'Jane Smith'
+  },
+  {
+    id: '3',
+    title: 'Lab Report: Photosynthesis',
+    description: 'Submit a detailed lab report on the photosynthesis experiment conducted in class.',
+    deadline: '2024-09-20',
+    course: 'Biology',
+    teacher: 'Emily Johnson'
+  },
+  {
+    id: '4',
+    title: 'Periodic Table Assignment',
+    description: 'Complete the periodic table worksheet and answer the related questions.',
+    deadline: '2024-09-25',
+    course: 'Chemistry',
+    teacher: 'Michael Brown'
+  },
+  {
+    id: '5',
+    title: 'Physics Project',
+    description: 'Build a simple circuit and explain its working principles.',
+    deadline: '2024-09-30',
+    course: 'Physics',
+    teacher: 'Chris Lee'
+  },
+  {
+    id: '6',
+    title: 'Historical Event Analysis',
+    description: 'Analyze a significant historical event and its impact on modern society.',
+    deadline: '2024-10-05',
+    course: 'History',
+    teacher: 'Sarah Davis'
+  },
+  {
+    id: '7',
+    title: 'Fitness Log',
+    description: 'Maintain a fitness log for two weeks and submit your progress report.',
+    deadline: '2024-10-10',
+    course: 'Physical Education',
+    teacher: 'David Wilson'
+  },
+  {
+    id: '8',
+    title: 'Art Portfolio',
+    description: 'Create an art portfolio with at least 5 different pieces of artwork.',
+    deadline: '2024-10-15',
+    course: 'Art',
+    teacher: 'Anna Martinez'
+  },
+  {
+    id: '9',
+    title: 'Music Composition',
+    description: 'Compose a short piece of music and present it to the class.',
+    deadline: '2024-10-20',
+    course: 'Music',
+    teacher: 'James Anderson'
+  },
+  {
+    id: '10',
+    title: 'Programming Assignment',
+    description: 'Develop a simple web application using HTML, CSS, and JavaScript.',
+    deadline: '2024-10-25',
+    course: 'Computer Science',
+    teacher: 'Patricia Thomas'
+  }
+];
+
+export const VirtualDemo = [
+  {
+    id: '1',
+    title: 'Algebra Basics',
+    description: 'Introduction to basic algebra concepts.',
+    course: 'Mathematics',
+    host: 'John Doe',
+    link: 'https://meet.google.com/algebra-basics',
+    time: '2024-09-10T10:00:00Z',
+    venue: 'Google Meet'
+  },
+  {
+    id: '2',
+    title: 'Shakespeare\'s Hamlet',
+    description: 'In-depth analysis of Shakespeare\'s Hamlet.',
+    course: 'English Literature',
+    host: 'Jane Smith',
+    link: 'https://zoom.us/j/1234567890',
+    time: '2024-09-11T14:00:00Z',
+    venue: 'Zoom'
+  },
+  {
+    id: '3',
+    title: 'Photosynthesis Process',
+    description: 'Detailed explanation of the photosynthesis process.',
+    course: 'Biology',
+    host: 'Emily Johnson',
+    link: 'https://meet.google.com/photosynthesis-process',
+    time: '2024-09-12T09:00:00Z',
+    venue: 'Google Meet'
+  },
+  {
+    id: '4',
+    title: 'Understanding the Periodic Table',
+    description: 'Comprehensive guide to the periodic table and its elements.',
+    course: 'Chemistry',
+    host: 'Michael Brown',
+    link: 'https://zoom.us/j/0987654321',
+    time: '2024-09-13T11:00:00Z',
+    venue: 'Zoom'
+  },
+  {
+    id: '5',
+    title: 'Basics of Circuit Building',
+    description: 'Learn how to build simple electrical circuits.',
+    course: 'Physics',
+    host: 'Chris Lee',
+    link: 'https://meet.google.com/basics-circuit-building',
+    time: '2024-09-14T13:00:00Z',
+    venue: 'Google Meet'
+  },
+  {
+    id: '6',
+    title: 'Analyzing Historical Events',
+    description: 'Discussion on significant historical events and their impact.',
+    course: 'History',
+    host: 'Sarah Davis',
+    link: 'https://zoom.us/j/1122334455',
+    time: '2024-09-15T15:00:00Z',
+    venue: 'Zoom'
+  },
+  {
+    id: '7',
+    title: 'Fitness and Wellness',
+    description: 'Tips and exercises for maintaining fitness and wellness.',
+    course: 'Physical Education',
+    host: 'David Wilson',
+    link: 'https://meet.google.com/fitness-wellness',
+    time: '2024-09-16T10:00:00Z',
+    venue: 'Google Meet'
+  },
+  {
+    id: '8',
+    title: 'Art Techniques',
+    description: 'Learn various art techniques and create beautiful artwork.',
+    course: 'Art',
+    host: 'Anna Martinez',
+    link: 'https://zoom.us/j/2233445566',
+    time: '2024-09-17T14:00:00Z',
+    venue: 'Zoom'
+  },
+  {
+    id: '9',
+    title: 'Music Composition',
+    description: 'Basics of composing music and creating melodies.',
+    course: 'Music',
+    host: 'James Anderson',
+    link: 'https://meet.google.com/music-composition',
+    time: '2024-09-18T09:00:00Z',
+    venue: 'Google Meet'
+  },
+  {
+    id: '10',
+    title: 'Introduction to Web Development',
+    description: 'Learn the fundamentals of web development using HTML, CSS, and JavaScript.',
+    course: 'Computer Science',
+    host: 'Patricia Thomas',
+    link: 'https://zoom.us/j/3344556677',
+    time: '2024-09-19T11:00:00Z',
+    venue: 'Zoom'
+  }
+];
 

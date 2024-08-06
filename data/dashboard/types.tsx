@@ -28,3 +28,30 @@ export interface TeacherDemoTypes {
   phoneNumber: string;
   subject: string
 }
+
+export interface CoursesDemoTypes{
+  id: string | number,
+  course: string,
+  teacher: string,
+  type: 'mandatory' | 'elective'
+}
+
+export interface AssignmentDemoTypes{
+  id: string,
+  title: string;
+  description: string;
+  deadline: Date | string;
+  course: string;
+  teacher: string;
+}
+
+export interface VirtualDemoTypes {
+  id: string;
+  title: string;
+  description: string;
+  host: string;
+  course: string;
+  time: string;
+  venue: string;
+  link: string
+}

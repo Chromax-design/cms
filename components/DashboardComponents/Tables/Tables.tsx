@@ -25,15 +25,19 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
 
-interface DataTableProps<TData, TValue> {
+interface ReusableTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];
   data: TData[];
+  filterPlaceholder?: string;
+  filterColumn?: string;
 }
 
-const NoticeTables = <TData, TValue>({
+const ReusableTable = <TData, TValue>({
   columns,
   data,
-}: DataTableProps<TData, TValue>) => {
+  filterPlaceholder = "Filter...",
+  filterColumn,
+}: ReusableTableProps<TData, TValue>) => {
   const [sorting, setSorting] = useState<SortingState>([]);
   const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([]);
 
@@ -54,33 +58,33 @@ const NoticeTables = <TData, TValue>({
 
   return (
     <Card>
-      <div className="flex items-center px-2 py-4">
-        <Input
-          placeholder="Filter title..."
-          value={(table.getColumn("title")?.getFilterValue() as string) ?? ""}
-          onChange={(e) =>
-            table.getColumn("title")?.setFilterValue(e.target.value)
-          }
-          className="max-w-sm !outline-secondary"
-        />
-      </div>
+      {filterColumn && (
+        <div className="flex items-center px-2 py-4">
+          <Input
+            placeholder={filterPlaceholder}
+            value={(table.getColumn(filterColumn)?.getFilterValue() as string) ?? ""}
+            onChange={(e) =>
+              table.getColumn(filterColumn)?.setFilterValue(e.target.value)
+            }
+            className="max-w-sm !outline-secondary"
+          />
+        </div>
+      )}
       <div>
         <Table>
           <TableHeader>
             {table.getHeaderGroups().map((headerGroup) => (
               <TableRow key={headerGroup.id}>
-                {headerGroup.headers.map((header) => {
-                  return (
-                    <TableHead key={header.id}>
-                      {header.isPlaceholder
-                        ? null
-                        : flexRender(
-                            header.column.columnDef.header,
-                            header.getContext()
-                          )}
-                    </TableHead>
-                  );
-                })}
+                {headerGroup.headers.map((header) => (
+                  <TableHead key={header.id}>
+                    {header.isPlaceholder
+                      ? null
+                      : flexRender(
+                          header.column.columnDef.header,
+                          header.getContext()
+                        )}
+                  </TableHead>
+                ))}
               </TableRow>
             ))}
           </TableHeader>
@@ -136,4 +140,4 @@ const NoticeTables = <TData, TValue>({
   );
 };
 
-export default NoticeTables;
+export default ReusableTable;
