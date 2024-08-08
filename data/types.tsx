@@ -64,3 +64,21 @@ export const loginSchema = z.object({
     .string()
     .min(7, { message: "Password should be at least 7 characters long" }),
 });
+
+export type SiteMetaDataTypes = {
+  title: string;
+  author: string;
+  headerTitle: string;
+  description: string;
+  language: string;
+  theme: string;
+  siteUrl: string;
+  siteLogo: string;
+  socialBanner: string;
+  email: string;
+  github: string;
+  twitter: string;
+  facebook: string;
+  linkedin: string;
+  locale: string;
+};

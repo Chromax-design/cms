@@ -13,7 +13,8 @@ import { Button } from "@/components/ui/button";
 import { formatDate, getInitials } from "@/lib/utilities";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Link from "next/link";
-import { FaEye } from "react-icons/fa";
+import { FaDownload, FaEye } from "react-icons/fa";
+
 
 export const VirtualColumns: ColumnDef<VirtualDemoTypes>[] = [
   {
@@ -251,6 +252,20 @@ export const CoursesColumns: ColumnDef<CoursesDemoTypes>[] = [
     header: "Type",
     cell: ({ row }) => {
       return <div className=" min-w-48">{row.getValue("type")}</div>;
+    },
+  },
+  {
+    accessorKey: "syllablus",
+    header: "Syllabus",
+    cell: ({ row }) => {
+      return (
+        <Button
+          variant="secondary"
+        >
+          Download
+          <FaDownload className="ml-2 h-4 w-4"  />
+        </Button>
+      );
     },
   },
 ];
