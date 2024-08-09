@@ -13,9 +13,7 @@ const Schedulepage = () => {
     <section className="space-y-2">
       <BreadCrumb title="schedule" />
       <PageTitle title="My class schedules" />
-      <div>
-        <DocumentViewer src={'/demo.pdf'} title="demo pdf" />
-      </div>
+      <DocumentViewer src={"/demo.pdf"} title="demo pdf" />
     </section>
   );
 };

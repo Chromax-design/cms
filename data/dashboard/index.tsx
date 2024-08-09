@@ -52,12 +52,12 @@ export const StudentLinks: LinkTypes[] = [
     title: "online classes",
     icon: <FiVideo />,
   },
-  {
-    id: 6,
-    link: "/dashboard/attendance",
-    title: "attendance",
-    icon: <FiCheckSquare />,
-  },
+  // {
+  //   id: 6,
+  //   link: "/dashboard/attendance",
+  //   title: "attendance",
+  //   icon: <FiCheckSquare />,
+  // },
   {
     id: 7,
     link: "/dashboard/schedule",

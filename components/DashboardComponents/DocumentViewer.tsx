@@ -5,7 +5,7 @@ const DocumentViewer = ({ src, title}:{src: string, title: string}) => {
     <div className='w-full h-screen'>
       <iframe
         src={src}
-        className='w-full h-full'
+        className='w-full h-full rounded-md'
         title={title}
         frameBorder="0"
       />
