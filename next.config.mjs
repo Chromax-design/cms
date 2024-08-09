@@ -7,7 +7,7 @@ const nextConfig = {
         hostname: "randomuser.me",
         port: "",
         pathname: "/api/portraits/**",
-      }
+      },
     ],
   },
 };

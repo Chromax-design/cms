@@ -14,7 +14,7 @@ const Schedulepage = () => {
       <BreadCrumb title="schedule" />
       <PageTitle title="My class schedules" />
       <div>
-        <DocumentViewer />
+        <DocumentViewer src={'/demo.pdf'} title="demo pdf" />
       </div>
     </section>
   );
